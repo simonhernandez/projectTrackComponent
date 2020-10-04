@@ -1,0 +1,76 @@
+/* ---- Google Fonts ---- */
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap');
+/* ---- Custom Properties ---- */
+:root{
+    /* Colors */
+    --clr-red: hsl(0, 100%, 68%);
+    --clr-verydarkblue: hsl(230, 29%, 20%);
+    --clr-darkgrayblue: hsl(230, 11%, 40%);
+    --clr-grayblue: hsl(231, 7%, 65%);
+    --clr-lightblue: hsl(207, 33%, 95%);
+    /* Fonts and typography */
+    --ff-primary: 'Barlow', sans-serif;
+    --ff-secondary: 'Barlow Condensed', sans-serif;
+
+    --fs-h1: 2.5rem;
+    --fs-normal: 1.125rem;
+    --fs-small: .875rem;
+
+    --fw-reg: 400;
+    --fw-bold: 700;
+    /* Z index */
+    --z-back: -1;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+@media screen and (min-width: 768px){
+    :root{
+        --fs-h1: 2.5rem;
+        --fs-normal: 1.125rem;
+        --fs-small: .875rem;
+    }
+}
+/* General Styles */
+/* Reset */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: var(--ff-primary);
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-reg);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+/* Typography */
+h1{font-size: var(--fs-h1);}
+/* Layout */
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* ---- Header Styles ---- */
+/* ---- Footer Styles ---- */
+/* ---- Media Queries ---- */
+/* ---- Animations ---- */
