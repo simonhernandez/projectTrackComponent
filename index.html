@@ -8,32 +8,64 @@
   
   <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- TODO: Add Css Stylesheet -->
 </head>
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <!-- Header -->
+  <header class="header">
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="logo"><img src="./images/logo.svg" alt="logo" class="logo__img"></div>
+        
+        <button class="nav__toggle" id="navToggle">
+          <i class="fas fa-bars"></i>
+        </button>
 
-  New
-  Monograph Dashboard
-
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
-
-  Schedule a demo
-  to see a live preview
-  
-  <footer>
-    <p class="attribution">
+        <ul class="nav__list" id="menu">
+          <li class="nav__item"><a href="#" class="nav__link">Product</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Features</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Login</a></li>
+        </ul>
+      </nav>
+      <!-- Hero  -->
+      <div class="hero">
+        <div class="hero__container--img">
+          <img src="./images/illustration-devices.svg" alt="An illustration of some devices using the Tracking App" class="hero__img">
+        </div>
+        
+        <div class="hero__container--txt">
+          <p class="hero__detail">
+            <span>New</span> Monograph Dashboard
+          </p>
+          <h1 class="hero__title">
+            Powerful insights <br> into your team
+          </h1>
+          <p class="hero__description">
+            Project planning and time tracking for agile teams
+          </p>
+          <div class="hero__cta">
+            <button class="btn btn--primary">
+              Schedule a demo
+            </button>
+            <span>to see a live preview</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <!-- Scripts -->
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/706a5916ba.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
