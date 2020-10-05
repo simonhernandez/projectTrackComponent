@@ -139,12 +139,17 @@ h1{font-size: var(--fs-h1);}
         letter-spacing: .075rem;
         font-weight: var(--fw-bold);
         box-shadow: var(--bxs-menu);
+        opacity: 0;
+        transition: all 1s ease-out;
     }
     .nav__list > *:not(:last-child){
         margin-bottom: 1.5rem;
     }
     .nav__item:last-child{
         color: var(--clr-grayblue);
+    }
+    .show{
+        opacity: 1;
     }
 }
 .hero__container--img{
