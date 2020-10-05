@@ -16,6 +16,7 @@
     --fs-h1: 2.5rem;
     --fs-normal: 1.125rem;
     --fs-small: .875rem;
+    --fs-icon: 1.3rem;
 
     --fw-reg: 400;
     --fw-bold: 700;
@@ -84,6 +85,9 @@ h1{font-size: var(--fs-h1);}
     font-weight: var(--fw-bold);
     font-size: inherit;
     letter-spacing: .93px;
+}
+[class^="fas"]{
+    font-size: var(--fs-icon);
 }
 /* Layout */
 .wrapper{
