@@ -136,11 +136,11 @@ h1{font-size: var(--fs-h1);}
         border-radius: .3125rem;
         text-align: center;
         text-transform: uppercase;
-        font-weight: var(--fw-bold);
         letter-spacing: .075rem;
+        font-weight: var(--fw-bold);
         box-shadow: var(--bxs-menu);
     }
-    .nav__item:not(:last-child){
+    .nav__list > *:not(:last-child){
         margin-bottom: 1.5rem;
     }
     .nav__item:last-child{
