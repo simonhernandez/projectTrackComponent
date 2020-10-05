@@ -98,6 +98,20 @@ h1{font-size: var(--fs-h1);}
 /* ---- Header Styles ---- */
 .header{
     min-height: 100vh;
+    position: relative;
+}
+.header::after{
+    content: '';
+    display: block;
+    height: 425px;
+    width: 320px;
+    background-color: var(--clr-lightblue);
+    border-bottom-left-radius: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: var(--z-back);
+
 }
 .nav{
     display: flex;
