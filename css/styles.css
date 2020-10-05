@@ -141,9 +141,13 @@ h1{font-size: var(--fs-h1);}
     margin-right: 1rem;
     border-radius: .8rem;
     font-weight: var(--fw-bold);
+    letter-spacing: .0625rem;
 }
 .hero__description{
     line-height: 26px;
+}
+.hero__cta span{
+    letter-spacing: .156rem;
 }
 /* ---- Footer Styles ---- */
 /* ---- Media Queries ---- */
