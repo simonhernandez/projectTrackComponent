@@ -210,12 +210,13 @@ h1{font-size: var(--fs-h1);}
 }
 /* ---- Footer Styles ---- */
 .footer{
-    position: absolute;
+    position: fixed;
     bottom: .5rem;
     left: 0;
     width: 100%;
     font-size: var(--fs-small);
     text-align: center;
+    /* transform: rotate(-90deg); */
 }
 .footer a{
     color: var(--clr-red);
