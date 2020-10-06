@@ -29,11 +29,11 @@
     /* Box Shadow */
     --bxs-menu: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-@media screen and (min-width: 768px){
+@media screen and (min-width: 767px){
     :root{
-        --fs-h1: 2.5rem;
+        --fs-h1: 4rem;
         --fs-normal: 1.125rem;
-        --fs-small: .875rem;
+        --fs-small: 1rem;
     }
 }
 /* General Styles */
@@ -126,7 +126,15 @@ h1{font-size: var(--fs-h1);}
 .nav__logo{
     max-width: 24px;
 }
-@media screen and (max-width: 768px){
+.nav__list{
+    text-transform: uppercase;
+    letter-spacing: .075rem;
+    font-weight: var(--fw-bold);
+}
+.nav__item:last-child{
+    color: var(--clr-grayblue);
+}
+@media screen and (max-width: 767px){
     .nav__list{
         background-color: var(--clr-white);
         position: fixed;
@@ -136,18 +144,12 @@ h1{font-size: var(--fs-h1);}
         padding: 1.5rem;
         border-radius: .3125rem;
         text-align: center;
-        text-transform: uppercase;
-        letter-spacing: .075rem;
-        font-weight: var(--fw-bold);
         box-shadow: var(--bxs-menu);
         opacity: 0;
         transition: all .4s ease-out;
     }
     .nav__list > *:not(:last-child){
         margin-bottom: 1.5rem;
-    }
-    .nav__item:last-child{
-        color: var(--clr-grayblue);
     }
     .show{
         opacity: 1;
@@ -160,7 +162,9 @@ h1{font-size: var(--fs-h1);}
 .hero__img{
     max-width: 150%;
 }
-.hero__container--txt > *:not(:last-child){
+.hero__detail,
+.hero__title,
+.hero__description{
     margin-bottom: 1rem;
 }
 .hero__title,
@@ -190,4 +194,51 @@ h1{font-size: var(--fs-h1);}
 }
 /* ---- Footer Styles ---- */
 /* ---- Media Queries ---- */
+@media screen and (min-width: 767px){
+    /* Layout */
+    .wrapper{
+        padding: 6rem 2rem;
+    }
+    /* Header */
+    .nav{
+        margin-bottom: 7.75rem;
+    }
+    .nav__toggle,
+    .nav__list hr{
+        display: none;
+    }
+    .nav__list{
+        display: flex;
+    }
+    .nav__list > *:not(:last-child){
+        margin-right: 2.6rem;
+    }
+    /* Hero */
+    .hero{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+    .hero__container--img,
+    .hero__container--txt{
+        align-self: center;
+    }
+    .hero__container--img{
+        grid-column: 7/-1;
+        order: 1;
+        margin: initial;
+    }
+    .hero__container--txt{
+        grid-column: 1/7;
+    }
+    .hero__title{
+        margin-bottom: 2rem;
+    }
+    .hero__description{
+        margin-bottom: 4rem;
+    }
+    .hero__cta span{
+        letter-spacing: .3125rem;
+        margin-left: 1.5rem;
+    }
+}
 /* ---- Animations ---- */
