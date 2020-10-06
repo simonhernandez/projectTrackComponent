@@ -162,7 +162,6 @@ h1{font-size: var(--fs-h1);}
     }
 }
 .hero__container--img{
-    /* max-width: 482px; */
     margin-bottom: 5.5rem;
 }
 .hero__img{
@@ -199,6 +198,18 @@ h1{font-size: var(--fs-h1);}
     letter-spacing: .156rem;
 }
 /* ---- Footer Styles ---- */
+.footer{
+    position: absolute;
+    bottom: .5rem;
+    left: 0;
+    width: 100%;
+    font-size: var(--fs-small);
+    text-align: center;
+}
+.footer a{
+    color: var(--clr-red);
+    text-decoration: underline;
+}
 /* ---- Media Queries ---- */
 @media screen and (min-width: 800px){
     /* Layout */
