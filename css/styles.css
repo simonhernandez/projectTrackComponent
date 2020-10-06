@@ -139,6 +139,17 @@ h1{font-size: var(--fs-h1);}
 }
 .nav__item:last-child{
     color: var(--clr-grayblue);
+    position: relative;
+}
+.nav__item:last-child::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: .0625rem;
+    background-color: var(--clr-grayblue);
+    position: absolute;
+    top: -50%;
+    left: 0;
 }
 @media screen and (max-width: 800px){
     .nav__list{
@@ -146,7 +157,7 @@ h1{font-size: var(--fs-h1);}
         position: fixed;
         top: 6.25rem;
         left: 2rem;
-        width: 20rem;
+        right: 2rem;
         padding: 1.5rem;
         border-radius: .3125rem;
         text-align: center;
@@ -229,6 +240,13 @@ h1{font-size: var(--fs-h1);}
     }
     .nav__list > *:not(:last-child){
         margin-right: 2.6rem;
+    }
+    .nav__item:last-child::before{
+        width: .375rem;
+        height: .375rem;
+        border-radius: 50%;
+        top: 40%;
+        left: -60%;
     }
     /* Hero */
     .hero{
