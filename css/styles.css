@@ -108,7 +108,7 @@ h1{font-size: var(--fs-h1);}
     content: '';
     display: block;
     height: 425px;
-    width: 320px;
+    width: 50%;
     background-color: var(--clr-lightblue);
     border-bottom-left-radius: 60px;
     position: absolute;
