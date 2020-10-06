@@ -29,7 +29,7 @@
     /* Box Shadow */
     --bxs-menu: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
-@media screen and (min-width: 767px){
+@media screen and (min-width: 800px){
     :root{
         --fs-h1: 4rem;
         --fs-normal: 1.125rem;
@@ -134,7 +134,7 @@ h1{font-size: var(--fs-h1);}
 .nav__item:last-child{
     color: var(--clr-grayblue);
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 800px){
     .nav__list{
         background-color: var(--clr-white);
         position: fixed;
@@ -194,10 +194,10 @@ h1{font-size: var(--fs-h1);}
 }
 /* ---- Footer Styles ---- */
 /* ---- Media Queries ---- */
-@media screen and (min-width: 767px){
+@media screen and (min-width: 800px){
     /* Layout */
     .wrapper{
-        padding: 6rem 2rem;
+        padding: 4rem 2rem;
     }
     /* Header */
     .nav{
