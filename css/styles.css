@@ -92,6 +92,9 @@ h1{font-size: var(--fs-h1);}
     font-size: inherit;
     letter-spacing: .93px;
 }
+.btn--primary:hover{
+    opacity: .75;
+}
 /* Layout */
 .wrapper{
     max-width: 1200px;
@@ -124,12 +127,15 @@ h1{font-size: var(--fs-h1);}
     margin-bottom: 4rem;
 }
 .nav__logo{
-    max-width: 24px;
+    max-width: 32px;
 }
 .nav__list{
     text-transform: uppercase;
     letter-spacing: .075rem;
     font-weight: var(--fw-bold);
+}
+.nav__item:hover{
+    text-decoration: underline;
 }
 .nav__item:last-child{
     color: var(--clr-grayblue);
