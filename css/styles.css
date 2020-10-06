@@ -176,7 +176,9 @@ h1{font-size: var(--fs-h1);}
     margin-bottom: 5.5rem;
 }
 .hero__img{
-    max-width: 150%;
+    width: 150%;
+    max-width: 600px;
+    margin-left: auto;
 }
 .hero__detail,
 .hero__title,
@@ -265,6 +267,10 @@ h1{font-size: var(--fs-h1);}
     }
     .hero__container--txt{
         grid-column: 1/7;
+    }
+    .hero__img{
+        max-width: initial;
+        margin: initial;
     }
     .hero__title{
         margin-bottom: 2rem;
