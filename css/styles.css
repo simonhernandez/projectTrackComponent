@@ -169,9 +169,11 @@ h1{font-size: var(--fs-h1);}
         margin-bottom: 1.5rem;
     }
     .nav__toggle{
+        height: 25px;
+        width: 25px;
         background-image: url(/images/icon-hamburger.svg);
-        height: 16px;
-        width: 24px;
+        background-repeat: no-repeat;
+        background-position: center;
     }
     .show{
         opacity: 1;
