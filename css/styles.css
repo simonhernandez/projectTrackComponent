@@ -168,6 +168,11 @@ h1{font-size: var(--fs-h1);}
     .nav__list > *:not(:last-child){
         margin-bottom: 1.5rem;
     }
+    .nav__toggle{
+        background-image: url(/images/icon-hamburger.svg);
+        height: 16px;
+        width: 24px;
+    }
     .show{
         opacity: 1;
     }
@@ -234,8 +239,7 @@ h1{font-size: var(--fs-h1);}
     .nav{
         margin-bottom: 7.75rem;
     }
-    .nav__toggle,
-    .nav__list hr{
+    .nav__toggle,{
         display: none;
     }
     .nav__list{
