@@ -68,8 +68,6 @@ h1{font-size: var(--fs-h1);}
 .hero__detail,
 .hero__cta{ font-size: var(--fs-small);}
 
-[class^="fas"]{font-size: var(--fs-icon);}
-
 .nav,
 .hero__detail,
 .hero__title,
@@ -125,9 +123,6 @@ h1{font-size: var(--fs-h1);}
     justify-content: space-between;
     align-items: center;
     margin-bottom: 4rem;
-}
-.nav__logo{
-    max-width: 32px;
 }
 .nav__list{
     text-transform: uppercase;
