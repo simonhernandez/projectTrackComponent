@@ -239,7 +239,7 @@ h1{font-size: var(--fs-h1);}
     .nav{
         margin-bottom: 7.75rem;
     }
-    .nav__toggle,{
+    .nav__toggle{
         display: none;
     }
     .nav__list{
