@@ -1,2 +1,2 @@
 # projectTrackComponent
-This repo showcases my solution for Frontend Mentor's Challenge: Project tracking intro component
+Single Landing Page that showcases TrackApp. An app that improves project planning and time tracking for agile teams.
